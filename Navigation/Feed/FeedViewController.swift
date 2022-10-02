@@ -8,8 +8,6 @@
 import UIKit
 
 class FeedViewController: UIViewController {
-
-    let post = Post(title: "Intersting news")
     
     let button: UIButton = {
         let bttn = UIButton()
@@ -49,7 +47,6 @@ class FeedViewController: UIViewController {
 
     @objc private func showMore() {
         let postVC = PostViewController()
-        postVC.post = post
         navigationController?.pushViewController(postVC, animated: true)
     }
 }

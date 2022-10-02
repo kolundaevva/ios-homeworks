@@ -64,15 +64,15 @@ class UserHeaderView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupLayout()
+        setupConstraint()
     }
 
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        setupLayout()
+        setupConstraint()
     }
 
-    private func setupLayout() {
+    private func setupConstraint() {
         addSubview(userImage)
 
         userImage.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 16).isActive = true
